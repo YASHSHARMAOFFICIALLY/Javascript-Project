@@ -30,6 +30,7 @@ resetBtn.addEventListener('click', function () {
     document.getElementById('minisec').innerHTML = "00";
 });
 
+
 function stopwatch() {
     if (timer) {
         minisec++;
@@ -47,6 +48,7 @@ function stopwatch() {
             minute = 0;
             second = 0;
         }
+
 
         let hrstring = hour < 10 ? "0" + hour : hour;
         let ministring = minute < 10 ? "0" + minute : minute;

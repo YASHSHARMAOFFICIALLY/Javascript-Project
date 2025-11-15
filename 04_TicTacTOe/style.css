@@ -1,0 +1,236 @@
+/* Reset & basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Adjust for navbar */
+    margin-top: 80px; /* Push down from fixed navbar */
+    padding: 20px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    background-color: #F2B138;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.logo {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Main container */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #0fbd8c;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Status bar */
+#game-status {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ca0909;
+}
+
+/* Board grid */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+}
+
+.board-cell {
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.board-cell:hover:not(.taken) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.board-cell.taken {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.player-x {
+    color: #2196F3;
+}
+
+.player-o {
+    color: #F44336;
+}
+
+/* Control buttons */
+.control {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #333;
+    background-color: #e01111;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.button-primary {
+    background-color: #2196F3;
+    color: #fff;
+    border-color: #2196F3;
+}
+
+.button-primary:hover {
+    background-color: #1976D2;
+    border-color: #1976D2;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+#modal-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#modal-message {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+    .board {
+        grid-template-columns: repeat(3, 90px);
+        grid-template-rows: repeat(3, 90px);
+        gap: 8px;
+    }
+
+    .board-cell {
+        font-size: 36px;
+    }
+
+    #game-status {
+        font-size: 20px;
+    }
+
+    .control {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .modal-content {
+        padding: 30px 20px;
+    }
+
+    #modal-title {
+        font-size: 24px;
+    }
+
+    #modal-message {
+        font-size: 18px;
+    }
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 ;
+    font-weight: 5000;
+    z-index: 1000;
+    
+    
+
+}

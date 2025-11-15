@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Rock-Paper-scisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h2>🎮 Welcome To Rock-Paper-scisor Game 🎮 </h2></div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title">Rock Paper Scissors</h1>
+         <div id="message" class="message"> Ready to Play ? </div>
+         <button id="startBtn" class="start-btn">Start Game</button>
+
+        <div id="gameArea" class="game-area hidden">
+            <div class="score-board">
+                <div>
+                     <h2>👤 Player</h2>
+                    <p id="playerScore">0</p>
+                </div>
+                <div>
+                    <h2>🤖 Computer</h2>
+                    <p id="computerScore">0</p>
+                </div>
+            </div>
+            <div class="choices">
+            <button id="rock" class="choice">✊</button>
+            <button id="paper" class="choice">✋</button>
+            <button id="scissors" class="choice">✌️</button>
+            </div>
+            <div class="result-display">
+            <p>You picked: <span id="playerPick"></span></p>
+            <p>Computer picked: <span id="computerPick"></span></p>
+        </div>
+    </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <h1><a href="https://buymeacoffee.com/buldwithyash" class="foot" target="_blank">Buy me a Coffee 😀 - Support the Developer!</a></h1>
+         
+    </footer>
+     
+      <script src="script.js"></script>
+</body>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h1>Tic-Tac-Toe</h1></div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <div class="status-bar">
+                <p id="game-status">Your Turn (X)</p>
+            </div>
+            
+            <div class="board" role="grid">
+                <div class="boardcell" role="gridcell" data-index="0"></div>
+                <div class="boardcell" role="gridcell" data-index="1"></div>
+                <div class="boardcell" role="gridcell" data-index="2"></div>
+                <div class="boardcell" role="gridcell" data-index="3"></div>
+                <div class="boardcell" role="gridcell" data-index="4"></div>
+                <div class="boardcell" role="gridcell" data-index="5"></div>
+                <div class="boardcell" role="gridcell" data-index="6"></div>
+                <div class="boardcell" role="gridcell" data-index="7"></div>
+                <div class="boardcell" role="gridcell" data-index="8"></div>
+            </div>
+
+            <div class="controls">
+                <button id="reset-btn" class="btn">Reset Game</button>
+                <button id="new-game-btn" class="btn btn-primary">New Game</button>
+            </div>
+        </div>
+    </main>
+
+
+    <div id="game-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modal-title">Game Over</h2>
+            <p id="modal-message">Result message here</p>
+            <button id="modal-close-btn" class="btn btn-primary">Play Again</button>
+        </div>
+    </div>
+
+   
+    <footer class = "footer">
+        <h1><a class = "foot" href="https://buymeacoffee.com/buldwithyash">Buy me a Coffee 😀 Click here 😀</a></h1>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

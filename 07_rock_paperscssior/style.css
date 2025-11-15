@@ -1,0 +1,110 @@
+ * {
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+        }
+
+ .navbar {
+  position: fixed; 
+  padding: 1rem 2rem;
+ text-align: center; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: white;
+  z-index: 1000; 
+}
+ main {
+             flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            padding-bottom: 100px;
+        }
+
+
+.message {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 2rem;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 0.5s ease-in-out;
+        }
+
+.title {
+    font-size: 39px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-btn {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-area {
+    margin-top: 70px;
+ 
+}
+
+.hidden {
+    display: none;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.choice {
+    font-size: 100px;
+    padding: 15px;
+    margin: 10px;
+    margin-left: 200px;
+    
+    cursor: pointer;
+    background: white;
+    border-radius: 10px;
+}
+
+.result-display {
+    margin-top: 60px;
+    font-size: 30px;
+    margin-left: 400px;
+   
+}
+.footer {
+  margin-bottom: 0px;
+  bottom: 0px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  
+  color: #2e2e2e;
+  transition: background-color 0.4s, color 0.4s;
+}

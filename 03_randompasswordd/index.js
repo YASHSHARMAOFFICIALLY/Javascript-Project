@@ -1,3 +1,4 @@
+
 function generate() {
     let dictionary = "";
     if (document.getElementById("lowercase").checked) {
@@ -12,10 +13,7 @@ function generate() {
     if (document.getElementById("symbol").checked) {
         dictionary += "!@#$%^&*()_+-={}[];<>:";
     }
-
     const length = document.querySelector('.slider').value;
-
-
     if (length < 1 || dictionary.length === 0) {
         return;
     }
